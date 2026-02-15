@@ -30,7 +30,6 @@ export interface Pokemon {
   resistant: string[];
   attacks: PokemonAttack;
   weaknesses: string[];
-  fleeRate: number;
   maxCP: number;
   evolutions: Pokemon[] | null;
   evolutionRequirements: PokemonEvolutionRequirement | null;

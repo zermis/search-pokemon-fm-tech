@@ -20,14 +20,15 @@
 }
 
 .searchSection {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .title {
   font-size: 2.75rem;
   font-weight: 800;
   margin: 0 0 0.5rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #FFC424;
+  background: linear-gradient(180deg, #FFDE00 0%, #FF9100 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -36,7 +37,7 @@
 .subtitle {
   font-size: 1.125rem;
   color: #636e72;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .gridSection {
@@ -47,7 +48,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: #2d3436;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -64,9 +65,9 @@
 .placeholder {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 3rem;
+  padding-top: 15rem;
 }
 
 .placeholderContent {
@@ -127,6 +128,17 @@
   }
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .container {
@@ -138,9 +150,7 @@
   }
 
   .rightPanel {
-    border-left: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    min-height: 100vh;
+    display: none;
   }
 
   .title {
